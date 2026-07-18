@@ -1,0 +1,7 @@
+# Archivo original conservado localmente como respaldo.
+assets/images/aprendizaje-portada.png
+
+# Archivos generados por el sistema y el editor.
+.DS_Store
+Thumbs.db
+.vscode/

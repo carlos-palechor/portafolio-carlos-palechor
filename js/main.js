@@ -1,0 +1,25 @@
+import { initializeActiveNavigation } from "./modules/active-navigation.js";
+import { initializeAboutCounters } from "./modules/about-counters.js";
+import { initializeDocuments } from "./modules/documents-renderer.js";
+import { initializeEducation } from "./modules/education-renderer.js";
+import { initializeExperience } from "./modules/experience-renderer.js";
+import { initializeHeroInteractions } from "./modules/hero-interactions.js";
+import { initializeMenu } from "./modules/menu.js";
+import { initializeProjects } from "./modules/projects-renderer.js";
+import { initializeSkills } from "./modules/skills-renderer.js";
+import { initializeScrollReveal } from "./modules/scroll-reveal.js";
+import { initializeTheme } from "./modules/theme.js";
+import { initializeTypingEffect } from "./modules/typing.js";
+
+initializeMenu();
+initializeTheme();
+initializeTypingEffect();
+initializeHeroInteractions();
+initializeAboutCounters();
+initializeExperience();
+initializeProjects();
+initializeSkills();
+initializeEducation();
+initializeDocuments();
+initializeScrollReveal();
+initializeActiveNavigation();

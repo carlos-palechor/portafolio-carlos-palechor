@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description"
+        content="Portafolio de Carlos Eduardo Palechor Moreno, desarrollador de software junior." />
+    <meta name="author" content="Carlos Eduardo Palechor Moreno" />
+
+    <title>Carlos Palechor | Desarrollador de Software</title>
+
+    <link rel="stylesheet" href="css/styles.css?v=11" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="navbar__logo" href="#inicio" aria-label="Ir al inicio">
+                CP
+            </a>
+            <button class="navbar__menu-button" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="navigation-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar__menu" id="navigation-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="theme-control">
+        <span class="theme-hint" role="status">
+            Cambia de tema<br />
+            si prefieres
+        </span>
+
+        <button class="theme-button" type="button" aria-label="Cambiar al tema claro">
+            <svg class="theme-button__icon theme-button__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+
+            <svg class="theme-button__icon theme-button__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <section class="hero" id="inicio">
+            <!-- Presentación inicial -->
+            <div class="hero__particles" aria-hidden="true"></div>
+
+            <div class="hero__content">
+                <p class="hero__greeting">Hola, soy</p>
+
+                <h1 class="hero__title">Carlos Eduardo Palechor Moreno</h1>
+
+                <p class="hero__profession">
+                    Tecnólogo en Análisis y Desarrollo de Software |
+                    <span class="typing-text">Desarrollador de Software Junior</span>
+                </p>
+
+                <p class="hero__description">
+                    Transformo requerimientos y necesidades en soluciones tecnológicas
+                    funcionales, organizadas y orientadas al usuario.
+                </p>
+
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#proyectos">
+                        Ver proyectos
+                    </a>
+
+                    <a class="button button--secondary" href="#contacto">
+                        Contactarme
+                    </a>
+                </div>
+
+                <div class="hero__social-links" aria-label="Redes profesionales">
+                    <a href="https://github.com/carlos-palechor" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/eduardo-moreno-0805ba381/" target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero__visual" aria-hidden="true">
+                <div class="code-card">
+                    <p><span>const</span> developer = {</p>
+                    <p>&nbsp;&nbsp;name: "Carlos Palechor",</p>
+                    <p>&nbsp;&nbsp;role: "Software Developer",</p>
+                    <p>&nbsp;&nbsp;learning: true</p>
+                    <p>};</p>
+                </div>
+            </div>
+
+            <a class="hero__scroll" href="#sobre-mi" aria-label="Continuar a la sección Sobre mí">
+                <span>Descubre más</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m7 10 5 5 5-5"></path>
+                </svg>
+            </a>
+        </section>
+
+
+        <section class="about section" id="sobre-mi">
+            <!-- Contenido de Sobre mí -->
+            <div class="section__heading">
+                <p class="section__eyebrow">Conóceme</p>
+                <h2 class="section__title">Sobre mí</h2>
+            </div>
+
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        Soy Tecnólogo en Análisis y Desarrollo de Software, con experiencia
+                        práctica en análisis de requerimientos, diseño de interfaces,
+                        desarrollo de funcionalidades, consumo de servicios, manejo de bases
+                        de datos, pruebas funcionales y documentación técnica.
+                    </p>
+
+                    <p>
+                        Me caracterizo por ser una persona responsable, comprometida y
+                        organizada, con capacidad de aprendizaje, disposición para trabajar
+                        en equipo y habilidad para transformar las necesidades de los
+                        usuarios en soluciones tecnológicas funcionales.
+                    </p>
+
+                    <p>
+                        Mi objetivo es continuar creciendo como desarrollador de software y
+                        participar en proyectos que permitan optimizar procesos y generar
+                        valor para las organizaciones.
+                    </p>
+                </div>
+
+                <div class="about__highlights">
+                    <article class="highlight-card">
+                        <span class="highlight-card__number" data-count="1">1</span>
+                        <h3 class="highlight-card__title">Proyecto destacado</h3>
+                    </article>
+
+                    <article class="highlight-card">
+                        <span class="highlight-card__number" data-count="7">7</span>
+                        <h3 class="highlight-card__title">Tecnologías principales</h3>
+                    </article>
+
+                    <article class="highlight-card">
+                        <span class="highlight-card__number" data-count="2026" data-count-start="2000">2026</span>
+                        <h3 class="highlight-card__title">Etapa productiva finalizada</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section" id="experiencia">
+            <!-- Experiencia -->
+            <div class="section__heading">
+                <p class="section__eyebrow">Mi trayectoria</p>
+                <h2 class="section__title">Experiencia</h2>
+            </div>
+
+            <div class="timeline" id="experience-container"></div>
+        </section>
+
+        <section class="projects section" id="proyectos">
+            <!-- Proyectos -->
+            <div class="section__heading">
+                <p class="section__eyebrow">Trabajo personal</p>
+                <h2 class="section__title">Proyectos destacados</h2>
+
+                <p class="section__description">
+                    Soluciones que desarrollo para fortalecer mis conocimientos y
+                    resolver necesidades reales.
+                </p>
+            </div>
+
+            <div class="projects__grid" id="projects-container"></div>
+        </section>
+
+        <section class="skills section" id="habilidades">
+            <!-- Habilidades -->
+            <div class="section__heading">
+                <p class="section__eyebrow">Conocimientos</p>
+                <h2 class="section__title">Habilidades</h2>
+
+                <p class="section__description">
+                    Tecnologías, herramientas y competencias que utilizo en el desarrollo
+                    de soluciones de software.
+                </p>
+            </div>
+
+            <div class="skills__groups" id="skills-container"></div>
+
+            <div class="soft-skills">
+                <h3 class="soft-skills__title">Competencias personales</h3>
+
+                <ul class="soft-skills__list" id="soft-skills-container"></ul>
+            </div>
+        </section>
+
+        <section class="education section" id="formacion">
+            <!-- Formacion Academica -->
+            <div class="section__heading">
+                <p class="section__eyebrow">Preparación profesional</p>
+                <h2 class="section__title">Formación académica</h2>
+            </div>
+
+            <div class="education__content" id="education-container"></div>
+        </section>
+
+        <section class="documents section" id="documentos">
+            <!-- Documentos -->
+            <div class="section__heading">
+                <p class="section__eyebrow">Documentación</p>
+                <h2 class="section__title">Documentos</h2>
+
+                <p class="section__description">
+                    Documentos que respaldan mi experiencia, desempeño y trayectoria
+                    profesional.
+                </p>
+            </div>
+
+            <div class="documents__grid" id="documents-container"></div>
+        </section>
+
+        <section class="contact section" id="contacto">
+            <!-- Contacto-->
+            <div class="section__heading">
+                <p class="section__eyebrow">Hablemos</p>
+                <h2 class="section__title">Contacto</h2>
+
+                <p class="section__description">
+                    Estoy interesado en oportunidades para continuar creciendo como
+                    desarrollador de software y aportar en nuevos proyectos.
+                </p>
+            </div>
+
+            <div class="contact__content">
+                <div class="contact__message">
+                    <h3 class="contact__title">
+                        ¿Tienes una oportunidad o proyecto?
+                    </h3>
+
+                    <p class="contact__description">
+                        Puedes escribirme por Gmail, WhatsApp o mediante mis redes profesionales.
+                    </p>
+
+                    <div class="contact__actions">
+                        <a class="button button--gmail"
+                            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=carlos.palechor.dev@gmail.com&amp;su=Contacto%20desde%20tu%20portafolio"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="icon button__icon" src="assets/icons/gmail.svg" width="26" height="26" alt="" />
+                            Enviar por Gmail
+                        </a>
+
+                        <a class="button button--whatsapp"
+                            href="https://wa.me/573146778437?text=Hola%20Carlos%2C%20vi%20tu%20portafolio%20y%20quisiera%20contactarte."
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="icon button__icon icon--whatsapp" src="assets/icons/whatsapp.svg" width="30"
+                                height="30" alt="" />
+                            Escribir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <address class="contact__information">
+                    <a class="contact-card"
+                        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=carlos.palechor.dev@gmail.com&amp;su=Contacto%20desde%20tu%20portafolio"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <img class="icon" src="assets/icons/gmail.svg" width="32" height="32" alt="" />
+                        </span>
+                        <span class="contact-card__body">
+                            <span class="contact-card__label">Correo electrónico</span>
+                            <span class="contact-card__value">carlos.palechor.dev@gmail.com</span>
+                        </span>
+                    </a>
+
+                    <a class="contact-card"
+                        href="https://wa.me/573146778437?text=Hola%20Carlos%2C%20vi%20tu%20portafolio%20y%20quisiera%20contactarte."
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <img class="icon icon--whatsapp" src="assets/icons/whatsapp.svg" width="46" height="46"
+                                alt="" />
+                        </span>
+                        <span class="contact-card__body">
+                            <span class="contact-card__label">WhatsApp</span>
+                            <span class="contact-card__value">+57 314 677 8437</span>
+                        </span>
+                    </a>
+
+                    <a class="contact-card" href="https://github.com/carlos-palechor" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <img class="icon" src="assets/icons/github.svg" width="32" height="32" alt="" />
+                        </span>
+                        <span class="contact-card__body">
+                            <span class="contact-card__label">GitHub</span>
+                            <span class="contact-card__value">carlos-palechor</span>
+                        </span>
+                    </a>
+
+                    <a class="contact-card" href="https://www.linkedin.com/in/eduardo-moreno-0805ba381/" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <img class="icon" src="assets/icons/linkedin.svg" width="32" height="32" alt="" />
+                        </span>
+                        <span class="contact-card__body">
+                            <span class="contact-card__label">LinkedIn</span>
+                            <span class="contact-card__value">Eduardo Moreno</span>
+                        </span>
+                    </a>
+
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <a class="footer__logo" href="#inicio" aria-label="Volver al inicio">
+                CP
+            </a>
+
+            <div class="footer__information">
+                <p class="footer__name">Carlos Eduardo Palechor Moreno</p>
+                <p class="footer__role">Desarrollador de Software Junior</p>
+            </div>
+
+            <nav class="footer__navigation" aria-label="Navegación secundaria">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#formacion">Formación</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="footer__social-links">
+                <a href="https://github.com/carlos-palechor" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/eduardo-moreno-0805ba381/" target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>
+                &copy; 2026 Carlos Eduardo Palechor Moreno. Todos los derechos
+                reservados.
+            </p>
+
+            <p>Diseñado y desarrollado por Carlos Palechor.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js?v=12"></script>
+</body>
+
+</html>

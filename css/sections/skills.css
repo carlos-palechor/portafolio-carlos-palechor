@@ -1,0 +1,314 @@
+/* Sección Habilidades */
+.skills {
+    position: relative;
+    isolation: isolate;
+}
+
+.skills::before {
+    position: absolute;
+    z-index: -1;
+    top: 8%;
+    right: -10%;
+
+    width: 360px;
+    height: 360px;
+
+    content: "";
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.1), transparent 68%);
+    pointer-events: none;
+}
+
+.skills__groups {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.skill-group {
+    position: relative;
+
+    padding: 1.75rem;
+
+    overflow: hidden;
+    background:
+        linear-gradient(145deg, rgba(34, 211, 238, 0.08), transparent 45%),
+        var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+
+    transition:
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.skill-group::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    content: "";
+    background: linear-gradient(90deg,
+            var(--color-primary),
+            var(--color-secondary));
+
+    transform: scaleX(0.32);
+    transform-origin: left;
+    transition: transform var(--transition-normal);
+}
+
+.skill-group::after {
+    position: absolute;
+    right: 1rem;
+    bottom: -0.6rem;
+
+    color: var(--color-primary);
+    opacity: 0.09;
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+
+    content: "</>";
+    pointer-events: none;
+
+    animation: skill-symbol-float 4s ease-in-out infinite;
+}
+
+.skill-group:nth-child(2) {
+    background:
+        linear-gradient(145deg, rgba(59, 130, 246, 0.1), transparent 48%),
+        var(--color-surface);
+}
+
+.skill-group:nth-child(2)::after {
+    color: var(--color-secondary);
+    content: "{ }";
+    animation-delay: 500ms;
+}
+
+.skill-group:nth-child(3) {
+    background:
+        linear-gradient(145deg, rgba(52, 211, 153, 0.08), transparent 48%),
+        var(--color-surface);
+}
+
+.skill-group:nth-child(3)::after {
+    color: var(--color-success);
+    content: "⚙";
+    animation-delay: 1s;
+}
+
+.skill-group:hover {
+    border-color: rgba(34, 211, 238, 0.45);
+    box-shadow: var(--glow-primary);
+    transform: translateY(-6px);
+}
+
+.skill-group:hover::before {
+    transform: scaleX(1);
+}
+
+.skill-group__title {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+
+    margin-bottom: 1.25rem;
+
+    font-size: 1.2rem;
+}
+
+.skill-group__title::before {
+    width: 10px;
+    height: 10px;
+
+    content: "";
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 3px;
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.55);
+
+    transform: rotate(45deg);
+}
+
+.skill-list {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.skill-list li {
+    padding: 0.45rem 0.75rem;
+
+    color: var(--color-text-muted);
+    background-color: var(--color-surface-transparent);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+
+    font-size: 0.85rem;
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.skill-list li:hover {
+    color: var(--color-background);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(34, 211, 238, 0.2);
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* ==============================
+   Competencias personales
+================================= */
+
+.soft-skills {
+    position: relative;
+
+    padding: 2rem;
+
+    overflow: hidden;
+    background:
+        linear-gradient(135deg,
+            rgba(34, 211, 238, 0.07),
+            rgba(59, 130, 246, 0.05)),
+        var(--color-surface);
+    border: 1px solid rgba(34, 211, 238, 0.28);
+    border-radius: var(--border-radius-large);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.soft-skills::after {
+    position: absolute;
+    right: -80px;
+    bottom: -100px;
+
+    width: 260px;
+    height: 260px;
+
+    content: "";
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.13), transparent 68%);
+    pointer-events: none;
+}
+
+.soft-skills__title {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 1.25rem;
+
+    font-size: 1.25rem;
+}
+
+.soft-skills__list {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.soft-skills__list li {
+    position: relative;
+
+    padding: 0.9rem 1rem 0.9rem 2.25rem;
+
+    color: var(--color-text-muted);
+    background: linear-gradient(135deg, var(--color-surface-transparent), rgba(34, 211, 238, 0.03));
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+
+    transition:
+        color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.soft-skills__list li::before {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+
+    width: 8px;
+    height: 8px;
+
+    content: "";
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.6);
+
+    transform: translateY(-50%);
+    animation: skill-dot-pulse 2s ease-in-out infinite;
+}
+
+.soft-skills__list li:hover {
+    color: var(--color-text);
+    border-color: rgba(34, 211, 238, 0.45);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+    transform: translateX(5px) translateY(-2px);
+}
+
+@keyframes skill-symbol-float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(3deg);
+    }
+}
+
+@keyframes skill-dot-pulse {
+    0%,
+    100% {
+        opacity: 0.65;
+        transform: translateY(-50%) scale(0.85);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.2);
+    }
+}
+
+@media (max-width: 900px) {
+    .skills__groups {
+        grid-template-columns: 1fr;
+    }
+
+    .soft-skills__list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+
+    .skill-group,
+    .soft-skills {
+        padding: 1.25rem;
+    }
+
+    .soft-skills__list {
+        grid-template-columns: 1fr;
+    }
+}
