@@ -450,11 +450,15 @@
         grid-template-columns: 1fr;
         gap: 3rem;
 
+        width: 100%;
         min-height: auto;
+        padding-inline: 1rem;
         padding-top: calc(var(--header-height) + 5rem);
     }
 
     .hero__content {
+        width: 100%;
+        min-width: 0;
         max-width: none;
     }
 

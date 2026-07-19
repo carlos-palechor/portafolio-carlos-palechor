@@ -6,9 +6,11 @@
     position: fixed;
     z-index: 1000;
     top: 0;
+    right: 0;
     left: 0;
 
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: var(--header-height);
 
     background-color: var(--color-header-background);
@@ -278,11 +280,16 @@ button:focus-visible {
 @media (max-width: 900px) {
     .navbar {
         gap: 0.75rem;
+
+        width: 100%;
+        padding-inline: 1rem;
     }
 
     .navbar__menu-button {
+        flex: 0 0 44px;
         display: flex;
         order: 3;
+        margin-left: auto;
     }
 
     .navbar__menu {
@@ -328,6 +335,7 @@ button:focus-visible {
 
 @media (max-width: 480px) {
     .theme-control {
+        max-width: calc(100% - 2rem);
         right: 1rem;
         bottom: 1rem;
     }
