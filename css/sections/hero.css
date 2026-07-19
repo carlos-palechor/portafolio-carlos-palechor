@@ -474,7 +474,9 @@
     }
 
     .hero__title {
-        font-size: clamp(2.5rem, 14vw, 4rem);
+        overflow-wrap: anywhere;
+
+        font-size: clamp(2.15rem, 13vw, 4rem);
     }
 
     .hero__actions .button {

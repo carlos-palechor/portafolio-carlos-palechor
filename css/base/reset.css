@@ -10,14 +10,19 @@
 }
 
 html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
 }
 
 body {
-    min-width: 320px;
+    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: clip;
 
     font-family: var(--font-family);
     color: var(--color-text);
