@@ -1,4 +1,4 @@
-import { experiences } from "../data/experience.js";
+import { experiences } from "../data/experience.js?v=2";
 import { createElement, createList } from "../utils/dom.js";
 
 const createDate = ({ start, end }) => {

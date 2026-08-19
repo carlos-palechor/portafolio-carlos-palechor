@@ -2,7 +2,7 @@ import { initializeActiveNavigation } from "./modules/active-navigation.js";
 import { initializeAboutCounters } from "./modules/about-counters.js";
 import { initializeDocuments } from "./modules/documents-renderer.js?v=2";
 import { initializeEducation } from "./modules/education-renderer.js";
-import { initializeExperience } from "./modules/experience-renderer.js";
+import { initializeExperience } from "./modules/experience-renderer.js?v=2";
 import { initializeHeroInteractions } from "./modules/hero-interactions.js";
 import { initializeMenu } from "./modules/menu.js";
 import { initializeProjects } from "./modules/projects-renderer.js";
