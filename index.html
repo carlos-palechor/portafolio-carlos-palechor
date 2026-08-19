@@ -11,7 +11,7 @@
 
     <title>Carlos Palechor | Desarrollador de Software</title>
 
-    <link rel="stylesheet" href="css/styles.css?v=13" />
+    <link rel="stylesheet" href="css/styles.css?v=14" />
 </head>
 
 <body>
@@ -235,7 +235,21 @@
                 </p>
             </div>
 
-            <div class="documents__grid" id="documents-container"></div>
+            <div class="documents-carousel" aria-label="Carrusel de documentos">
+                <button class="documents-carousel__button documents-carousel__button--previous" type="button"
+                    aria-label="Ver documentos anteriores">
+                    <span aria-hidden="true">&#8249;</span>
+                </button>
+
+                <div class="documents__grid" id="documents-container" tabindex="0"></div>
+
+                <button class="documents-carousel__button documents-carousel__button--next" type="button"
+                    aria-label="Ver documentos siguientes">
+                    <span aria-hidden="true">&#8250;</span>
+                </button>
+            </div>
+
+            <div class="documents-carousel__indicators" aria-label="Seleccionar documento"></div>
         </section>
 
         <section class="contact section" id="contacto">
@@ -372,7 +386,7 @@
         </div>
     </footer>
 
-    <script type="module" src="js/main.js?v=13"></script>
+    <script type="module" src="js/main.js?v=14"></script>
 </body>
 
 </html>

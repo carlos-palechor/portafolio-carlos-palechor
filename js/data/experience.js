@@ -1,6 +1,6 @@
 export const experiences = [
     {
-        role: "Aprendiz SENA — Desarrollo de Software",
+        role: "Aprendiz SENA",
         company: "Asociación Indígena del Cauca AIC EPS-I",
         area: "Gestión TICs — Subproceso de Desarrollo",
         start: { datetime: "2026-01-15", label: "15 de enero de 2026" },
