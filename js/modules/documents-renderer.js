@@ -1,4 +1,4 @@
-import { documents } from "../data/documents.js";
+import { documents } from "../data/documents.js?v=2";
 import { createElement } from "../utils/dom.js";
 
 const PDF_ICON_PATH = "assets/icons/pdf.svg";
