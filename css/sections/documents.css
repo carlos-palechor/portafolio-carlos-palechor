@@ -198,10 +198,23 @@
     line-height: 1;
 }
 
-.document-viewer__frame {
+.document-viewer__pages {
     width: 100%;
     height: calc(100% - 58px);
-    border: 0;
+    padding: 1rem;
+
+    overflow: auto;
+    overscroll-behavior: contain;
+    background-color: #d1d5db;
+    user-select: none;
+}
+
+.document-viewer__page {
+    width: min(100%, 850px);
+    margin-inline: auto;
+
+    pointer-events: none;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2);
 }
 
 @media (max-width: 760px) {
@@ -235,5 +248,9 @@
         max-height: none;
         border: 0;
         border-radius: 0;
+    }
+
+    .document-viewer__pages {
+        padding: 0.5rem;
     }
 }

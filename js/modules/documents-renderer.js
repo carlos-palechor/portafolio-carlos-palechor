@@ -8,23 +8,22 @@ const createDocumentViewer = () => {
     const header = createElement("div", "document-viewer__header");
     const title = createElement("h3", "document-viewer__title");
     const closeButton = createElement("button", "document-viewer__close", "×");
-    const frame = createElement("iframe", "document-viewer__frame");
+    const pages = createElement("div", "document-viewer__pages");
 
     closeButton.type = "button";
     closeButton.setAttribute("aria-label", "Cerrar documento");
-    frame.title = "Visor de documento PDF";
-
     closeButton.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("contextmenu", (event) => event.preventDefault());
     dialog.addEventListener("click", (event) => {
         if (event.target === dialog) dialog.close();
     });
-    dialog.addEventListener("close", () => frame.removeAttribute("src"));
+    dialog.addEventListener("close", () => pages.replaceChildren());
 
     header.append(title, closeButton);
-    dialog.append(header, frame);
+    dialog.append(header, pages);
     document.body.append(dialog);
 
-    return { dialog, frame, title };
+    return { dialog, pages, title };
 };
 
 const createDocumentCard = (document, openDocument) => {
@@ -116,7 +115,15 @@ export const initializeDocuments = () => {
     const viewer = createDocumentViewer();
     const openDocument = (document) => {
         viewer.title.textContent = document.title;
-        viewer.frame.src = `${document.path}#toolbar=0&navpanes=0&scrollbar=1`;
+        const pageImages = document.pages.map((page, index) => {
+            const image = createElement("img", "document-viewer__page");
+            image.src = page;
+            image.alt = `${document.title}, página ${index + 1}`;
+            image.draggable = false;
+            return image;
+        });
+
+        viewer.pages.replaceChildren(...pageImages);
         viewer.dialog.showModal();
     };
     const cards = documents.map((document) => createDocumentCard(document, openDocument));
