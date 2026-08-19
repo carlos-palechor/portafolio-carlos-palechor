@@ -1,5 +1,11 @@
 export const documents = [
     {
+        title: "Certificado de título",
+        description:
+            "Certificación oficial de mi título como Tecnólogo en Análisis y Desarrollo de Software.",
+        path: "assets/documents/certificado-de-titulo.pdf",
+    },
+    {
         title: "Certificado laboral",
         description: "Certificación correspondiente a mi experiencia durante la etapa productiva.",
         path: "assets/documents/certificado-laboral.pdf",
